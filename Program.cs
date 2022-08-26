@@ -15,6 +15,7 @@ sqlConnBuilder.Password = builder.Configuration["Password"];
 
 builder.Services.AddDbContext<ProductDbContext>(opt => 
                                             opt.UseSqlServer(sqlConnBuilder.ConnectionString));
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
 
 var app = builder.Build();
 
