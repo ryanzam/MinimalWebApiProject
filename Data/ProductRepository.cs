@@ -12,7 +12,7 @@ public class ProductRepository : IProductRepository
     {
         this.context = context;
     }
-    public async Task CreateProduct(ProductCreateDTO product)
+    public async Task CreateProduct(Product product)
     {
         if(product is null)
         {

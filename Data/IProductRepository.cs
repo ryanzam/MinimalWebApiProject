@@ -7,7 +7,7 @@ public interface IProductRepository
 {
     Task<IEnumerable<Product>> GetProducts();
     Task<Product> GetProductById(int id);
-    Task CreateProduct(ProductCreateDTO product);
+    Task CreateProduct(Product product);
     void DeleteProduct(Product product); 
     Task SaveChanges();
 }

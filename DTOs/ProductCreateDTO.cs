@@ -3,8 +3,6 @@ using System.ComponentModel.DataAnnotations;
 namespace MinimalWebApiProject.DTOs;
 public class ProductCreateDTO
 {
-    [Key]
-    public int Id { get; set; }
     [Required]
     [MaxLength(50)]
     public string? ProductName { get; set; }
